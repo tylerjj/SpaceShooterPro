@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 2254425639168351196, guid: b8b69de3a84041849b7cf3c853ed5b5b, type: 3}
-  _spawnTimer: 2
+  _spawnTimer: 1.5
   _enemyContainer: {fileID: 861257697}
 --- !u!4 &787298619
 Transform:
