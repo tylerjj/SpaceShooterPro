@@ -1,0 +1,10 @@
+Enemies need to belong to an Enemy Pool.
+Lasers need to belong to a Laser Pool.
+
+Do PowerUps need to belong to a PowerUp pool?
+If a TripleShot has three children that are lasers, should it be pulling from the Laser pool? 
+Should there be a Tripleshot pool? If so, should we have the Tripleshot laser inherit from Laser, 
+but overwrite it's methods?
+
+The above thought process would go towards a tightly coupled solution. 
+Need to learn more about generics in C# before trying to make a generic object pooling system.
