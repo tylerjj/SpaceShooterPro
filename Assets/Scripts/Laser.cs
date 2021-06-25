@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laser : MonoBehaviour
+public class Laser : Ammunition
 {
 
-    [SerializeField]
-    private float _speed = 8.0f;
+    //[SerializeField]
+    //private float _speed = 8.0f;
 
     // Update is called once per frame
     void Update()
@@ -16,11 +16,12 @@ public class Laser : MonoBehaviour
 
     void CalculateMovement()
     {
-        transform.Translate(Vector3.up *_speed* Time.deltaTime);
+        transform.Translate(Vector3.up * Speed * Time.deltaTime);
 
         if (transform.position.y >= 8.5f)
         {
-            Destroy(this.gameObject);
+            Ammunition thisAmmo = this;
+            AmmoPool.Instance.ReturnToPool(thisAmmo);
         }
     }
 }

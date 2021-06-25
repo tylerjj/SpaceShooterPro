@@ -54,7 +54,9 @@ public class Enemy : MonoBehaviour
         }        
         else if (other.CompareTag("Laser"))
         {
-            Destroy(other.gameObject);
+            // We are assuming that Laser is handling itself. 
+            // Otherwise, try Ammunition ammo = other.transform.GetComponent<Ammunition>();
+            // AmmoPool.ReturnToPool(ammo)
             Destroy(this.gameObject);
         }
     }
