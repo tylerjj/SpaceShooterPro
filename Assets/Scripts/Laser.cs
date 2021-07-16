@@ -20,8 +20,8 @@ public class Laser : Ammunition
 
         if (transform.position.y >= 8.5f)
         {
-            Ammunition thisAmmo = this;
-            AmmoPool.Instance.ReturnToPool(thisAmmo);
+           
+            LaserPool.Instance.ReturnToPool(this);
         }
     }
 }

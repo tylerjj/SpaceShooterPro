@@ -25,7 +25,7 @@ public abstract class Ammunition : MonoBehaviour
         //TODO: Refactor this.
         if (!other.gameObject.CompareTag("Player"))
         {
-            AmmoPool.Instance.ReturnToPool(this);
+            LaserPool.Instance.ReturnToPool(this);
         }
         
     }

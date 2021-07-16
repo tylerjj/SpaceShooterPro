@@ -781,7 +781,7 @@ GameObject:
   - component: {fileID: 1520943821}
   - component: {fileID: 1520943822}
   m_Layer: 0
-  m_Name: AmmoPool
+  m_Name: LaserPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1520943820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31778da3c30c04442a7fe40dc58005a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1221b98c201088e4e912603f2cd6a60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: -2380206068158673329, guid: 3b6928976de1206459d1ae7021b92a60, type: 3}
